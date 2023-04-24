@@ -1,0 +1,228 @@
+body
+{
+    background-color: #f4f2f5;          /* kolor tła strony */
+    font-family: Georgia;           /* czcionka na stronie */
+    font-size: 20px;            /* rozmiar czcionki */
+    color: black;           /* kolor czcionki */
+}
+/*////////////////////////////////////////////// container*/
+#container
+{
+    width: 1000px;          /* szerokość bloku z zawartością */
+    margin-left: auto;          /* marginesy od lewej automatyczne */
+    margin-right: auto;         /* marginesy od prawej automatyczne */
+    text-align: center;             /* położenie tekstu w centrum */
+}
+/*////////////////////////////////////////////// logo*/
+#logo
+{
+    
+}
+/*////////////////////////////////////////////// menu*/
+#menu
+{
+    background-color: #004225;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;              /* obramowanie */
+}
+
+/* główny element ol */
+ol 
+{
+    list-style-type: none;              /* aby lista nie była numerowana */
+    padding: 0;             /* obramowanie */
+    margin: 0;              /* margines */
+    background-color: #004225;          /* kolor tła */
+    font-size: 18px;            /* rozmiar czcionki */
+    height: 2em;            /* wysokość ol jest dwa razy większa od wysokości czcionki */
+    line-height: 2em;           /* czcionka nie będzie zbita w jednym miejscu */
+    text-align: center;         /* ułożenie tekstu po środku */
+}
+/* elementy a z ol */
+ol a 
+{
+    display: block;         /* wyświetlanie elementów a jako bloków */
+    text-decoration: none;          /* usunięcie podkreślenia tekstu */
+    color: white;            /* ustawienie koloru czcionki */
+    padding: 0 5px;         /* obramowanie wewnątrz */
+}
+/* element li z ol */
+ol > li 
+{
+    float: left;            /* aby elementy li znajdowały się obok siebie */
+    width: 150px;           /* szerokość */
+    margin-left: 1px;           /* odsunięcie elementów li o 1px */
+    background-color: #004225;          /* kolor tła */
+    height: 2em;            /* wysokość równa dwukrotności wysokości czcionki */
+}
+/* pierwszy element li z ol */
+ol > li:first-child
+{
+    margin-left: 0;                /* usunięcie właściwości marginesu z pierwszego elementu li */
+}
+/* element li z ol po najechaniu na niego myszką */
+ol > li:hover 
+{
+    cursor: pointer;
+}
+/* element a z li z ol po najechaniu myszką na li */
+ol > li:hover > a 
+{
+    color: darkgrey;
+}
+/* element ul z li z ol po najechaniu na li */
+ol > li:hover > ul 
+{
+    display: block;         /* wyświetlanie elementów ul jako bloków */
+}
+
+/*....................................................rozwijana lista.............................................................*/
+
+/* rozwijane elementy ul */
+ol > li > ul 
+{
+    display: none;          /* chowa listę */
+    list-style-type: none;          /* aby lista nie była numerowana */
+    padding: 0;         /* obramowanie */
+    margin: 0;          /* margines */
+}
+/* element li rozwijany */
+ol > li > ul > li 
+{
+    position: relative;         /* aby nagłówek listy nie wchodził przed listę */
+    background-color: #EEE;         /* kolor tła dla li w liście rozwijanej */
+}
+/* element a rozwijany */
+ol > li > ul > li > a 
+{
+    border-top: 1px solid #FFF;         /* górne obramowanie */
+}
+/* element a rozwijany po najechaniu myszką na li */
+ol > li > ul > li:hover > a 
+{
+    color: darkgrey;           /* kolor czcionki */
+}
+
+/*....................................................drugi stopień listy.............................................................*/
+
+/* element ul po najechaniu na li */
+ol > li:hover > ul > li:hover > ul
+{
+    display: block;         /* wyświetlanie elementów ul jako bloków */
+}
+/* rozwijane elementy ul w ul */
+ol > li > ul > li > ul
+{
+     display: none;          /* chowa listę */
+    list-style-type: none;          /* aby lista nie była numerowana */
+    padding: 0;         /* obramowanie */
+    margin: 0;          /* margines */
+}
+/* element li rozwijany */
+ol > li > ul > li > ul > li
+{
+    position: relative;         /* aby nagłówek listy nie wchodził przed listę */
+    background-color: darkgrey;         /* kolor tła dla li w liście rozwijanej */
+}
+/* element a rozwijany */
+ol > li > ul > li > a 
+{
+    border-top: 1px solid #FFF;         /* górne obramowanie */
+}
+/* element a rozwijany po najechaniu myszką na li */
+ol > li > ul > li:hover > ul > li:hover > a 
+{
+    color: white;           /* kolor czcionki */
+}
+
+.option
+{
+    float: left;                /* wyrównanie zawartości do prawej */
+    min-width: 50px;            /* minimalna szerokość */
+    height: 25px;               /* wysokość */
+    font-size: 18px;            /* rozmiar czcionki */
+    padding: 10px;           /* ramka od prawej strony */
+}
+/*////////////////////////////////////////////// topbar*/
+#topbar
+{
+    padding: 5px;
+}
+#right
+{
+    width: 300px;
+    background-color: #f4f2f5;
+    float: right;
+}
+/*////////////////////////////////////////////// sidebar*/
+#sidebar a:link {color: white}
+#sidebar a:hover
+{
+    background-color: #004225;
+    padding: 8px;
+    color: aliceblue;
+    cursor: pointer;
+}
+#sidebar a:visited {color: white}
+#sidebar
+{
+    float: right;           /* przesunięcie do prawej */
+    width: 250px;           /* szerokość */
+    height: auto;           /* wysokość */
+    padding: 20px;          /* obramowanie */
+    padding-right: 300px;           /* obramowanie prawe */
+    background-color: #444444;          /* kolor tła */
+}
+#sidebar a {text-decoration: none}
+
+.side
+{
+    float: right;
+    min-width: 50px;
+    height: 25px;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    color: white;
+}
+/*////////////////////////////////////////////// content*/
+#content
+{
+    float: left;
+    text-align: justify;
+    width: 710px;
+    min-height: 580px;
+    padding: 20px;
+    padding-left: 300px;
+}
+
+a:link          /*przed naciśnięciem linku*/
+{
+    color: #004225;
+}
+a:hover         /*podczas najechania kursorem*/
+{
+    background-color: #004225;
+    color: white;
+}
+a:visited           /*po naciśnięciu linku*/
+{
+    color: #004225;
+}
+td 
+{
+    border: 1px solid #004225;
+    text-align: center;
+    padding: 10px;
+}
+/*////////////////////////////////////////////// footer*/
+#footer
+{
+   clear: both; 
+    background-color: #004225;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
