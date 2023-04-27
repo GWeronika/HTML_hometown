@@ -1,4 +1,4 @@
-# HTML_hometown
+# HTML_project
 
 Individual project for IT studies. 
 
