@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "pl">      <!-- ustawienie języka strony -->
+    
+<html>
+
+    <head>
+        <meta charset = "utf-8">		<!-- określenie jakie znaki będą używane -->
+	   <title>MeetinZielonki</title>			<!-- to co pojawi się na zakładce -->
+	   <meta name = "description" content = "Zielonki to wieś położona w Małopolsce. Jej atrakcyjność podkreśla bezpośrednie sąsiedztwo z Krakowem i oddalonym o niecałe 15 km terenem Ojcowskiego Parku Narodowego"/>			      <!-- opis pojawiający się przed włączeniem strony -->
+	   <meta name = "keywords" content = "Zielonki, wieś, "/>			<!-- słowa klucze -->
+	   <meta name = "author" content = "Weronika Gaweł"/>			<!-- autor -->
+
+	<link rel = "stylesheet" href = "../style.css" type = "text/css" />     <!-- link do arkusza styli, nazwa pliku, dokument tekstowy z rozszerzeniem css -->
+    </head>
+    
+    <body>
+        
+        <div id = "container">          <!-- cała strona -->
+        </div>
+        
+        <div id = "logo">           <!-- blok logo -->
+            <a href = "../index2.html"><img src = "../GRAFIKA/zielonki.jpg"/></a>         <!-- umieszczenie grafiki jako odsyłacza do strony głównej -->
+        </div>
+        
+       <div id = "menu">           <!-- blok menu -->
+            <ol>                <!-- tworzenie menu rozwijanego -->
+                <li><a class = "option">Położenie</a>           <!-- stworzenie klasy "option" -->
+                    <ul>
+                        <li><a href = "mapa.html">Mapa</a></li>            <!-- odsyłacz do podstrony "mapa" -->
+                        <li><a href = "dojazd.html">Dojazd</a></li>
+                    </ul>
+                </li>    
+                <li><a class = "option">Kultura</a>
+                    <ul>
+                        <li><a href = "rajd_rowerowy.html">Rajd Rowerowy</a>
+                            <ul>
+                                <li><a href = "rajdy_rowerowe.html">Rajd Rowerowy</a></li>
+                                <li><a href = "rower.html">Rowerem przez Zielonki</a></li>
+                            </ul>
+                        </li>
+                        <li><a href = "pucheroki.html">Przegląd Pucheroków</a></li>
+                        <li><a href = "ckpir.html">CKPiR</a></li>
+                        <li><a href = "marchewkowy.html">Marchewkowy Półmaraton</a></li>
+                        <li><a href = "kosciol.html">Kościół Narodzenia NMP</a></li>
+                    </ul>
+                </li>    
+                <li><a class = "option">Turystyka</a>
+                    <ul>
+                        <li><a href = "fort.html">Fort 45 Marszowiec</a></li>
+                        <li><a href = "park.html">Park wiejski</a></li>
+                        <li><a href = "bunkry.html">Bateria B3 Marszowiec</a></li>
+                        <li><a href = "dolinki_krakowskie.html">Dolinki krakowskie</a>
+                            <ul>
+                                <li><a href = "ciekawe_dolinki.html">Warte zwiedzenia</a></li>
+                                <li><a href = "dolina_pradnika.html">Dolina Prądnika</a></li>
+                                <li><a href = "trasy_dolinki.html">Trasy</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>    
+            </ol>
+            <div style = "clear:both;"></div>           <!-- umieszczenie poniżej bloków po obu stronach -->
+        </div>
+        
+        <div id = "topbar"></div>           <!-- pasek między menu i zawartością -->
+        
+        <div id = "right"></div>            <!-- margines od prawej -->
+        
+        <div id = "sidebar">            <!-- blok po prawej stronie -->
+                <div class = "side">          <!-- podzielenie kategorii na klasy pod nazwą "side" -->
+            <a href = "mapa.html">Mapa</a>
+                </div>
+                <div class = "side">
+            <a href = "dojazd.html">Dojazd</a>
+                </div>
+                <div class = "side">
+            <a href = "rajd_rowerowy.html">Rajd Rowerowy</a>
+                </div>
+                <div class = "side">
+            <a href = "pucheroki.html">Przegląd Pucheroków</a>
+                </div>
+                <div class = "side">
+            <a href = "ckpir.html">CKPiR</a>
+                </div>
+                <div class = "side">
+            <a href = "marchewkowy.html">Marchewkowy Półmaraton</a>
+                </div>
+                <div class = "side">
+            <a href = "fort.html">Fort 45 Marszowiec</a>
+                </div>
+                <div class = "side">
+            <a href = "park.html">Park wiejski</a>
+                </div>
+                <div class = "side">
+            <a href = "kosciol.html">Kościół Narodzenia NMP</a>
+                </div>
+                <div class = "side">
+            <a href = "bunkry.html">Bateria B3 Marszowiec</a>
+                </div>
+                <div class = "side">
+            <a href = "dolinki_krakowskie.html">Dolinki podkrakowskie</a>
+                </div>
+            <br/><br/><br/>         <!-- enter 3x -->
+        </div>
+    
+        <div id = "content">            <!-- blok zawartości -->
+            
+        <h1>Dojazd</h1>
+           Do Zielonek dojeżdżają autobusy komunikacji miejskiej MPK. Zielonki znajdują się już w drugiej strefie aglomeracyjnej, dlatego koszt bieltów miesięcznych różni się od tych kupowanych przez mieszkańców miasta Krakowa. Można jednak skorzystać z 9  autobusów. Są to linie:
+            <br/><br/>
+            <table>             <!-- tworzenie tabeli -->
+                <tr><td>207</td><td>Krowodrza Górka - Trojanowice Pętla</td></tr>               <!-- tr oddziela wiersze od siebie a td dzieli wiersz na kolumny -->
+                <tr><td>220</td><td>Krowodrza Górka - Giebułtów Morgi</td></tr>
+                <tr><td>227</td><td>Krowodrza Górka - Górna Wieś Pętla</td></tr>
+                <tr><td>240</td><td>Krowodrza Górka - Pękowice Ojcowska</td></tr>
+                <tr><td>267</td><td>Krowodrza Górka - Smardzowice Remiza</td></tr>
+                <tr><td>287</td><td>Krowodrza Górka - Zielonki Marszowiec Pętla</td></tr>
+                <tr><td>297</td><td>Krowodrza Górka - Boleń Pętla</td></tr>
+                <tr><td>337</td><td>Krowodrza Górka - Trojanowice Pętla</td></tr>
+                <tr><td>937</td><td>Krowodrza Górka - Owczary Pętla (nocny)</td></tr>
+            </table>
+            <br/>
+            
+            Szczegółowy rozkład jazdy autobusów można znaleźć na stronie <a href = "https://www.mpk.krakow.pl/" target = "_blank" title = "Strona główna MPK Kraków">Miejskiego Przedsiębiorstwa Komynikacyjnego S.A. w Krakowie</a>.
+        </div>
+    
+        <div id = "footer">             <!-- blok footer -->
+        Zielonki
+        </div>
+    
+    </body>
+</html>
